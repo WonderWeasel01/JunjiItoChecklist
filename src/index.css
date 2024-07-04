@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'ExquisiteCorpse';
+  src: local('ExquisiteCorpse'), url(./fonts/ExquisiteCorpse.ttf) format('truetype');
+}
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +17,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 a {
@@ -26,14 +33,26 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  width: 100%;
   min-width: 320px;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
   background-color: #1F1F1F;
   flex-direction: column;
+  width: 100%;
 
 }
+html{
+  width: 100%;
+}
+.html{
+  width: 100%;
+}
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 h1 {
   font-size: 3.2em;

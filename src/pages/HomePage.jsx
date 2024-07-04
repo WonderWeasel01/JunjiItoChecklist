@@ -1,5 +1,6 @@
 import 'react'
 import '../css/HomePage.css'
+import '../index.css'
 
 import uzumaki from '../assets/bookCovers/uzumaki.png'
 import gyo from '../assets/bookCovers/gyo.png'
@@ -23,6 +24,8 @@ import betwixt from '../assets/bookCovers/betwixt.png'
 import mimistalesofterror from '../assets/bookCovers/mimisTalesOfTerror.png'
 import stitches from '../assets/bookCovers/stitches.png'
 import uncanny from '../assets/bookCovers/uncanny.png'
+import viz from '../assets/viz.png'
+import kc from '../assets/kc.png'
 
 
 
@@ -34,6 +37,18 @@ function HomePage() {
     <>
       <html>
         <body>
+          <div className='header'>
+              <h1>Junji Ito Checklist</h1>
+          </div>
+
+          <div className='logorow'>
+            <div className='logo'>
+              <img src={viz} alt="" className='logo'/>
+            </div>
+           <div className='logo2'>
+              <img src={kc} alt="" className='logo'/>
+           </div>
+          </div>
 
 
 
@@ -67,6 +82,7 @@ function HomePage() {
                 <div>HARDCOVER</div>
                 <div>October 15, 2013 - ISBN-10: 1421561328</div>
               </div>
+
 
             </div>
 

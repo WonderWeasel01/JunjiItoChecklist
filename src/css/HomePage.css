@@ -19,17 +19,19 @@
     flex-direction: row;
     border-radius: 0px 0px 15px 15px;
     align-items: center;
+    flex-wrap: wrap;
   
  
 }
 
 .midsectionleft{
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 400px;
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
+
     
  
     
@@ -48,7 +50,9 @@
     width: 1000px;
     height: 400px;
     font-size: 25px;
-
+    word-wrap: break-word;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .row{
@@ -59,11 +63,120 @@
     width: auto;
     height: auto;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .bookcolumn{
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #C61327;
+    color: #1F1F1F;
+    margin-bottom: 50px;
+    font-size: 2vh;
+    font-family: 'ExquisiteCorpse'
+
+}
+
+.headerright{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C61327;
+    margin-bottom: 50px;
+    top: 10px;
+    left: 1200px;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.logorow{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    width: 1000px;
+    border-radius: 15px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .bookcard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logorow {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .midsectionleft {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .coverimage {
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .bookcolumn {
+        gap: 20px;
+    }
+
+    .bottomrow {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5vh;
+
+    }
+
+    :root{
+        width: 100%;
+    }
 }
