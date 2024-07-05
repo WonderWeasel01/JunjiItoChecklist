@@ -47,17 +47,17 @@ function HomePage() {
             <div className='midsectionright'>
             <div className='description'>
                 <h3> 
-                  Decription
+                Description
                 </h3>
                 {book.description}
               </div>
               
             </div>
           </div>
-          <div className='bottomrow' style={{ backgroundColor: '#D0282F' }}>
-            <div>{book.edition}</div>
+          <div className='bottomrow' style={{ backgroundColor: book.color }}>
+            <div>{book.publicationDate}</div>
+            <div>{book.isbn}</div>
             <div>{book.format}</div>
-            <div>{book.publicationDate} - {book.isbn}</div>
           </div>
         </div>
       );
