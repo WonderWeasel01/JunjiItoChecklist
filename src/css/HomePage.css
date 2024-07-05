@@ -107,6 +107,15 @@
     flex-direction: column;
     gap: 20px;
 }
+.logo{
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: contain;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
 
 
 .logorow{
@@ -116,9 +125,8 @@
     justify-content: center;
     align-items: center;
     background-color: #212529;
-    width: 1000px;
+    width: 1500px;
     border-radius: 15px;
-    height: 500px;
     margin-bottom: 50px;
 }
 
@@ -179,4 +187,14 @@
     :root{
         width: 100%;
     }
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    
+}
+
+.logo::after{
+    transform: scale(1.0);
+    
 }

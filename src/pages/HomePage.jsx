@@ -1,4 +1,4 @@
-import 'react'
+import React, { useState } from 'react';
 import '../css/HomePage.css'
 import '../index.css'
 
@@ -26,6 +26,9 @@ import stitches from '../assets/bookCovers/stitches.png'
 import uncanny from '../assets/bookCovers/uncanny.png'
 import viz from '../assets/viz.png'
 import kc from '../assets/kc.png'
+import darkHorse from '../assets/darkHorse.png'
+import comicsOne from '../assets/comicsOne.png'
+import oldViz from '../assets/oldViz.png'
 
 
 
@@ -33,26 +36,56 @@ import kc from '../assets/kc.png'
 
 function HomePage() {
 
+  const [visibleColumn, setVisibleColumn] = useState(null);
+
+
   return (
     <>
       <html>
         <body>
-          <div className='header'>
-              <h1>Junji Ito Checklist</h1>
-          </div>
-
-          <div className='logorow'>
-            <div className='logo'>
-              <img src={viz} alt="" className='logo'/>
-            </div>
-           <div className='logo2'>
-              <img src={kc} alt="" className='logo'/>
-           </div>
-          </div>
+          
+      <div className='header'>
+        <h1>Junji Ito Checklist</h1>
+      </div>
 
 
+    
+      <div className='logorow'>
+        <img 
+          src={viz} 
+          alt="VIZ Media" 
+          className='logo' 
+          onClick={() => setVisibleColumn('viz')}
+        />
+        <img 
+          src={kc} 
+          alt="KC" 
+          className='logo' 
+          onClick={() => setVisibleColumn('kc')}
+        />
+          <img 
+          src={comicsOne} 
+          alt="Comisc One" 
+          className='logo'
+          onClick={() => setVisibleColumn('comiscOne')}
+        />
+        
+        <img 
+          src={darkHorse} 
+          alt="Dark Horse" 
+          className='logo'
+          onClick={() => setVisibleColumn('darkHorse')}
+        />
+          <img 
+          src={oldViz} 
+          alt="Old VIZ Media" 
+          className='logo'
+          onClick={() => setVisibleColumn('oldViz')}
+        />
+      </div>
 
-          <div className='bookcolumn'>
+      {visibleColumn === 'viz' && (
+        <div className='bookcolumn'>
             <div className="bookcard">
               <div className='row'>
                 <div className='midsectionleft'>
@@ -623,7 +656,42 @@ function HomePage() {
                 <div>Spring 2025</div>
               </div>
             </div>
-          </div>
+          
+        </div>
+      )}
+
+      {visibleColumn === 'kc' && (
+        <div className='bookcolumn'>
+          
+        </div>
+      )}
+
+      {visibleColumn === 'darkHorse' && (
+        <div className='bookcolumn'>
+         
+        </div>
+      )}
+
+      
+      {visibleColumn === 'comicsOne' && (
+        <div className='bookcolumn'>
+
+        </div>
+      )}
+
+      {visibleColumn === 'oldViz' && (
+        <div className='bookcolumn'>
+          
+        </div>
+      )}
+
+
+
+
+          
+
+
+
         </body>
       </html>
 
