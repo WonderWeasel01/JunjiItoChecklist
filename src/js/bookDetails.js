@@ -14,6 +14,17 @@ import remina from '../assets/bookCovers/remina.png';
 import lovesickness from '../assets/bookCovers/lovesickness.png';
 import sensor from '../assets/bookCovers/sensor.png';
 import deserter from '../assets/bookCovers/deserter.png';
+import theliminalzone from '../assets/bookCovers/theLiminalZone.png';
+import blackparadox from '../assets/bookCovers/blackParadox.png';
+import tombs from '../assets/bookCovers/tombs.png';
+import soichi from '../assets/bookCovers/soichi.png';
+import betwixt from '../assets/bookCovers/betwixt.png';
+import mimistalesofterror from '../assets/bookCovers/mimisTalesOfTerror.png';
+import stitches from '../assets/bookCovers/stitches.png';
+
+import uncanny from '../assets/bookCovers/uncanny.png';
+
+
 
 
 // import other images similarly...
@@ -145,13 +156,115 @@ const bookDetails = {
     },
     book14: {
       title: "Deserter: Junji Ito Story Collection",
-      description: "An ever-increasing malice. A mind-numbing terror. The seeds of horror are sown in this collection of Junji Ito's earliest works. A vengeful family hides an army deserter for eight years after the end of World War II. His wronged wife waits to exact revenge. A girl cowers in fear as she hears footsteps climbing the stairs—a killer has arrived. A girl haunts the farmhouse where she committed suicide. The floating head of a young boy traumatizes the woman who only wanted to help him. This hauntingly strange story collection showcases a dozen of Junji Ito's earliest works from when he burst onto the horror scene, creating the wrenching disturbia that has captivated millions of fans worldwide.",
+      description: "An ever-increasing malice. A mind-numbing terror. The seeds of horror are sown in this collection of Junji Ito's earliest works.A vengeful family hides an army deserter for eight years after the end of World War II, cocooning him in a false reality where the war never ended. A pair of girls look alike, but they're not twins. And a boy's nightmare threatens to spill out into the real world... This hauntingly strange story collection showcases a dozen of Junji Ito's earliest works from when he burst onto the horror scene, sowing fresh seeds of terror.",
       image: deserter,
       format: "HARDCOVER",
       publicationDate: "December 21, 2021",
-      isbn: "ISBN-10: 1974720529",
-      color: "#D16574"
+      isbn: "ISBN-10: 1974719863",
+      color: "#CC6270"
+    },
+    
+    book15: {
+      title: "The Liminal Zone",
+      description: "What destiny awaits them after the screaming?After abruptly departing from a train in a small town, a couple encounters a \"weeping woman\"-a professional mourner-sobbing inconsolably at a funeral. Mako changes afterward-she can't stop crying! In another tale, having decided to die together, a couple enters Aokigahara, the infamous suicide forest. What is the shocking otherworldly torrent that they discover there?One of horror's greatest talents, Junji Ito beckons readers to join him in an experience of ultimate terror with four transcendently terrifying tales.",
+      image: theliminalzone,
+      format: "HARDCOVER",
+      publicationDate: "July 26, 2022",
+      isbn: "ISBN-10: 1974726444",
+      color: "#A6A1C3"
+    },
+    
+    book16: {
+      title: "Black Paradox",
+      description: "Four people intent on killing themselves meet through the suicide website Black Paradox: Maruso, a nurse who despairs about the future; Taburo, a man who is tortured by his doppelganger; Pii-tan, an engineer with his own robot clone; and Baracchi, a woman who agonizes about the birthmark on her face. They wander together in search of the perfect death, fatefully opening a door that leads them to a rather bizarre destiny...",
+      image: blackparadox,
+      format: "HARDCOVER",
+      publicationDate: "October 25, 2022",
+      isbn: "ISBN-10: 1974728633",
+      color: "#1E181F"
+    },
+    
+    book17: {
+      title: "Tombs: Junji Ito Story Collection",
+      description: "Countless tombstones stand in rows throughout a small community, forming a bizarre tableau. What fate awaits a brother and sister after a traffic accident in this town of the dead? In another tale, a girl falls silent, her tongue transformed into a slug. Can a friend save her? Then, when a young man moves to a new town, he finds the house next door has only a single window. What does his grotesque neighbor want, calling out to him every evening from that lone window?Fresh nightmares brought to you by horror master Junji Ito.",
+      image: tombs,
+      format: "HARDCOVER",
+      publicationDate: "March 28, 2023",
+      isbn: "ISBN-10: 1974736040",
+      color: "#B7D465"
+    },
+    
+    book18: {
+      title: "Soichi: Junji Ito Story Collection",
+      description: "Soichi, the unhinged second son of the Tsujii family, chews nails and makes them clatter and clack as he spouts horrific curses to bring about the most bizarre happenings. Whether it's summer holidays or a birthday party, Soichi can turn any occasion into a nightmare in a heartbeat. What is the terrible secret of his origin? Meanwhile, tormented by his little brother's never-ending pranks, older brother Koichi has a soundproof room built. But why does it have a series of four doors? And then there's the strange phenomenon surrounding the handmade casket their grandfather left behind. What on earth-or hell-has the family seen there?",
+      image: soichi,
+      format: "HARDCOVER",
+      publicationDate: "July 25, 2023",
+      isbn: "ISBN-10: 1974739023",
+      color: "#6658A1"
+    },
+    
+    book19: {
+      title: "Betwixt: A Horror Manga Anthology",
+      description: "Manga creators from Japan and the US present an international showcase of horror. Collected for the first time in Betwixt: A Horror Manga Anthology, six short stories reveal the universal fear of the space between the known and unknown. Will anyone cross that border?",
+      image: betwixt,
+      format: "HARDCOVER",
+      publicationDate: "October 10, 2023",
+      isbn: "ISBN-10: 1974741451",
+      color: "#7EB63F"
+    },
+    
+    book20: {
+      title: "Mimi's Tales of Terror",
+      description: "University student Mimi and her boyfriend Naoto encounter one chilling mystery after another. There’s the enigmatic neighbor woman dressed in black from head to toe—but if she’s so odd, why does it seems like there are many others like her? Then, whose eyes track Mimi’s movements from the cemetery next door?  And why does a bizarre red circle drawn on a basement wall change with each passing day?",
+      image: mimistalesofterror,
+      format: "HARDCOVER",
+      publicationDate: "October 24, 2023",
+      isbn: "ISBN-10: 1974738515",
+      color: "#BB2C1C"
+    },
+    
+    book21: {
+      title: "Stitches by Hirokatsu Kihara, Illustrations by Junji Ito",
+      description: "A tumor shaped like a man’s face slowly moves across a woman’s body. The sea shoots glowing balls into the sky, much to the distress of beachgoers. And a girl dressed up for a holiday has no eyes, no nose, nothing—her face is a total blank.",
+      image: stitches,
+      format: "HARDCOVER",
+      publicationDate: "March 26, 2024",
+      isbn: "ISBN-10: 1974736563",
+      color: "#C10015"
+    },
+    
+    book22: {
+      title: "Alley: Junji Ito Story Collection",
+      description: "",
+      image: "",
+      format: "HARDCOVER",
+      publicationDate: "July 23, 2024",
+      isbn: "ISBN-10: 1974736032",
+      color: "#CC6270"
+    },
+    
+    book23: {
+      title: "Uncanny: The Origins of Fear",
+      description: "",
+      image: uncanny,
+      format: "HARDCOVER",
+      publicationDate: "October 15, 2024",
+      isbn: "ISBN-10: 1974747301",
+      color: "#CC6270"
+    },
+    
+    book24: {
+      title: "The Liminal Zone, Vol. 2",
+      description: "What fate awaits when death is not the end? A group of four university students stumbles upon a deserted, decaying village deep in the mountains only to find an enormous perpetual motion machine still at work there. Before they can answer the questions of who made it and to what end, the friends begin to disappear, one after the other. Another story sees the return of the strange Hikizuri siblings! A girl weighed down since birth by an invisible burden meets the odd siblings and moves in with them in order to understand the truth about herself. But after a string of bizarre occurrences, the siblings’ uncle appears on the scene…",
+      image: "",
+      format: "HARDCOVER",
+      publicationDate: "Spring 2025",
+      isbn: "",
+      color: "#CC6270"
     }
+    
+
   
 };
 

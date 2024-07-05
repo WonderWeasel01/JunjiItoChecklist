@@ -30,7 +30,7 @@ function HomePage() {
 
   const renderBookCards = () => {
     const books = [];
-    for (let i = 1; i <= 14; i++) {
+    for (let i = 1; i <= 24; i++) {
       const bookKey = `book${i}`;
       const book = bookDetails[bookKey];
       books.push(
