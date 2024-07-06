@@ -31,11 +31,11 @@ function HomePage() {
   };
 
   const renderKC = () => {
-    const books = [];
-    for (let i = 1; i <= 6; i++) {
+    const booksKC = [];
+    for (let i = 25; i <= 30; i++) {
       const bookKey = `book${i}`;
       const book = bookDetailsKC[bookKey];
-      books.push(
+      booksKC.push(
         <div id={bookKey} className="bookcard" key={bookKey} onClick={() => handleBookCardClick(bookKey)}>
           <div className='row'>
             <div className='midsectionleft'>
@@ -64,15 +64,15 @@ function HomePage() {
         </div>
       );
     }
-    return books;
+    return booksKC;
   };
 
   const renderViz = () => {
-    const books = [];
+    const booksViz = [];
     for (let i = 1; i <= 24; i++) {
       const bookKey = `book${i}`;
       const book = bookDetailsViz[bookKey];
-      books.push(
+      booksViz.push(
         <div id={bookKey} className="bookcard" key={bookKey} onClick={() => handleBookCardClick(bookKey)}>
           <div className='row'>
             <div className='midsectionleft'>
@@ -101,7 +101,7 @@ function HomePage() {
         </div>
       );
     }
-    return books;
+    return booksViz;
   };
 
   return (

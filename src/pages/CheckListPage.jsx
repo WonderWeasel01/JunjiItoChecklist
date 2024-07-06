@@ -1,8 +1,11 @@
-// ChecklistPage.js
-
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import bookDetails from '../js/bookDetailsViz';
+
+import bookDetailsViz from '../js/bookDetailsViz';
+import bookDetailsKC from '../js/bookDetailsKC';
+
+// Combine book details from all sources into a single object
+const bookDetails = { ...bookDetailsViz, ...bookDetailsKC };
 
 function ChecklistPage() {
   const location = useLocation();
@@ -13,28 +16,33 @@ function ChecklistPage() {
     <div>
       <h1>Selected Books Checklist</h1>
       <div id="book-list">
-        {books.map(bookId => (
-          <div key={bookId} className="bookcard">
-            <div className='row'>
-              <div className='midsectionleft'>
-                <div>
-                  <h1>{bookDetails[bookId].title}</h1>
+        {books.map(bookId => {
+          const book = bookDetails[bookId];
+          if (!book) return null; // In case bookId is not found in bookDetails
+
+          return (
+            <div key={bookId} className="bookcard">
+              <div className='row'>
+                <div className='midsectionleft'>
+                  <div>
+                    <h1>{book.title}</h1>
+                  </div>
+                  <div className='description'>
+                    {book.description}
+                  </div>
                 </div>
-                <div className='description'>
-                  {bookDetails[bookId].description}
+                <div className='midsectionright'>
+                  <img src={book.image} alt={`Cover of ${book.title}`} className="coverimage" />
                 </div>
               </div>
-              <div className='midsectionright'>
-                <img src={bookDetails[bookId].image} alt={`Cover of ${bookDetails[bookId].title}`} className="coverimage" />
+              <div className='bottomrow' style={{ backgroundColor: book.color }}>
+                <div>{book.edition}</div>
+                <div>{book.format}</div>
+                <div>{book.publicationDate} - {book.isbn}</div>
               </div>
             </div>
-            <div className='bottomrow' style={{ backgroundColor: '#D0282F' }}>
-              <div>{bookDetails[bookId].edition}</div>
-              <div>{bookDetails[bookId].format}</div>
-              <div>{bookDetails[bookId].publicationDate} - {bookDetails[bookId].isbn}</div>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       <button onClick={() => window.print()}>Print</button>
     </div>
