@@ -1,35 +1,35 @@
 // bookDetails.js
 
-import uzumaki from '../assets/bookCovers/uzumaki.png';
-import gyo from '../assets/bookCovers/gyo.png';
-import fragments from '../assets/bookCovers/fragmentsOfHorror.png';
-import tomie from '../assets/bookCovers/tomie.png';
-import shiver from '../assets/bookCovers/shiver.png';
-import frankenstein from '../assets/bookCovers/frankenstein.png';
-import Smashed from '../assets/bookCovers/smashed.png';
-import noLongerHuman from '../assets/bookCovers/noLongerHuman.png';
-import twistedVisions from '../assets/bookCovers/twistedVisions.png';
-import venusInTheBlindSpot from '../assets/bookCovers/venusInTheBlindSpot.png';
-import remina from '../assets/bookCovers/remina.png';
-import lovesickness from '../assets/bookCovers/lovesickness.png';
-import sensor from '../assets/bookCovers/sensor.png';
-import deserter from '../assets/bookCovers/deserter.png';
-import theliminalzone from '../assets/bookCovers/theLiminalZone.png';
-import blackparadox from '../assets/bookCovers/blackParadox.png';
-import tombs from '../assets/bookCovers/tombs.png';
-import soichi from '../assets/bookCovers/soichi.png';
-import betwixt from '../assets/bookCovers/betwixt.png';
-import mimistalesofterror from '../assets/bookCovers/mimisTalesOfTerror.png';
-import stitches from '../assets/bookCovers/stitches.png';
+import uzumaki from '../assets/bookCoversViz/uzumaki.png';
+import gyo from '../assets/bookCoversViz/gyo.png';
+import fragments from '../assets/bookCoversViz/fragmentsOfHorror.png';
+import tomie from '../assets/bookCoversViz/tomie.png';
+import shiver from '../assets/bookCoversViz/shiver.png';
+import frankenstein from '../assets/bookCoversViz/frankenstein.png';
+import Smashed from '../assets/bookCoversViz/smashed.png';
+import noLongerHuman from '../assets/bookCoversViz/noLongerHuman.png';
+import twistedVisions from '../assets/bookCoversViz/twistedVisions.png';
+import venusInTheBlindSpot from '../assets/bookCoversViz/venusInTheBlindSpot.png';
+import remina from '../assets/bookCoversViz/remina.png';
+import lovesickness from '../assets/bookCoversViz/lovesickness.png';
+import sensor from '../assets/bookCoversViz/sensor.png';
+import deserter from '../assets/bookCoversViz/deserter.png';
+import theliminalzone from '../assets/bookCoversViz/theLiminalZone.png';
+import blackparadox from '../assets/bookCoversViz/blackParadox.png';
+import tombs from '../assets/bookCoversViz/tombs.png';
+import soichi from '../assets/bookCoversViz/soichi.png';
+import betwixt from '../assets/bookCoversViz/betwixt.png';
+import mimistalesofterror from '../assets/bookCoversViz/mimisTalesOfTerror.png';
+import stitches from '../assets/bookCoversViz/stitches.png';
 
-import uncanny from '../assets/bookCovers/uncanny.png';
+import uncanny from '../assets/bookCoversViz/uncanny.png';
 
 
 
 
 // import other images similarly...
 
-const bookDetails = {
+const bookDetailsViz = {
   book1: {
     title: 'Uzumaki',
     description: `A curse hangs over the small, foggy Japanese coastal town of
@@ -39,7 +39,6 @@ const bookDetails = {
       From seashells to maelstroms in the sea and to the human body. As the anxiety
       spreads, the inhabitants of Kurozu-cho are drawn deeper and deeper into the
       endless maelstrom…`,
-    edition: 'UZUMAKI - 3-in-1 Deluxe Edition',
     format: 'HARDCOVER',
     publicationDate: 'October 15, 2013',
     isbn: 'ISBN-10: 1421561328',
@@ -268,4 +267,4 @@ const bookDetails = {
   
 };
 
-export default bookDetails;
+export default bookDetailsViz;

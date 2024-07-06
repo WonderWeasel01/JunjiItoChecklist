@@ -1,9 +1,11 @@
 import React from 'react';
 import '../css/HomePage.css';
 import '../index.css';
-import bookDetails from '../js/bookDetails';
+import bookDetailsViz from '../js/bookDetailsViz';
+import bookDetailsKC from '../js/bookDetailsKC';
 import { useNavigate } from 'react-router-dom';
 import useBookSelection from '../js/useBookSelection';
+
 
 import viz from '../assets/viz.png';
 import kc from '../assets/kc.png';
@@ -28,11 +30,48 @@ function HomePage() {
     navigate(`/checklist?books=${encodeURIComponent(selectedBooksJSON)}`);
   };
 
-  const renderBookCards = () => {
+  const renderKC = () => {
+    const books = [];
+    for (let i = 1; i <= 6; i++) {
+      const bookKey = `book${i}`;
+      const book = bookDetailsKC[bookKey];
+      books.push(
+        <div id={bookKey} className="bookcard" key={bookKey} onClick={() => handleBookCardClick(bookKey)}>
+          <div className='row'>
+            <div className='midsectionleft'>
+              <div>
+                <h2>{book.title}</h2>
+              </div>
+              <div>
+              <img src={book.image} alt={book.title} className="coverimage" />
+              </div>
+            </div>
+            <div className='midsectionright'>
+            <div className='description'>
+                <h3> 
+                Description
+                </h3>
+                {book.description}
+              </div>
+              
+            </div>
+          </div>
+          <div className='bottomrow' style={{ backgroundColor: book.color }}>
+            <div>{book.publicationDate}</div>
+            <div>{book.isbn}</div>
+            <div>{book.format}</div>
+          </div>
+        </div>
+      );
+    }
+    return books;
+  };
+
+  const renderViz = () => {
     const books = [];
     for (let i = 1; i <= 24; i++) {
       const bookKey = `book${i}`;
-      const book = bookDetails[bookKey];
+      const book = bookDetailsViz[bookKey];
       books.push(
         <div id={bookKey} className="bookcard" key={bookKey} onClick={() => handleBookCardClick(bookKey)}>
           <div className='row'>
@@ -93,10 +132,20 @@ function HomePage() {
             <button className='button' onClick={handleSelectAll}>Select all</button>
             <button className='button' onClick={handleUnselectAll}>Unselect all</button>
           </div>
-          {renderBookCards()}
+          {renderViz()}
         </div>
       )}
-      
+
+      {visibleColumn === 'kc' && (
+              <div className='bookcolumn'>
+                <div className='buttongroup'>
+                  <button className='button' onClick={handleSelectAll}>Select all</button>
+                  <button className='button' onClick={handleUnselectAll}>Unselect all</button>
+                </div>
+                {renderKC()}
+              </div>
+            )}
+            
     </>
   );
 }
