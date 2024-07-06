@@ -1,0 +1,117 @@
+.listrow{
+    width: 500px;
+    display: flex;
+  justify-content: space-between;
+
+    align-items: center;
+    padding-bottom: 20px;
+    flex-direction: row;
+}
+
+.bottomrowlist{
+    display: none;
+}
+
+.Listdescription{
+    display: none;
+}
+
+.coverimagelist{
+    width: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.booklist{
+    display: flex;
+    align-items: center;
+    width: 500px;
+
+    flex-direction: row;
+}
+
+.allbookslist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.left{
+    display: flex;
+    align-items: left;
+    width: 80%;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 20%;
+    text-align: center;
+}
+
+.checkboxlist{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    
+}
+
+
+/*CheckBox*/
+/* Hide the default checkbox */
+.custom-checkbox input {
+    display: none;
+}
+
+/* Create a custom checkmark */
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+/* Style the checkmark (default state) */
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 14px;
+    left: -20px;
+    height: 40px;
+    width: 40px;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+/* Style the checkmark when the checkbox is checked */
+.custom-checkbox input:checked + .checkmark {
+    background-color: #4CAF50;
+    border-radius: 4px;
+}
+
+/* Create the green correct arrow (checked state) */
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+    display: block;
+}
+
+/* The checkmark (the tick) */
+.custom-checkbox .checkmark:after {
+    left: 12px;
+    top: 5px;
+    width: 12px;
+    height: 22px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
