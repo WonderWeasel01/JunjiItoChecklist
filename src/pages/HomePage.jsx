@@ -6,7 +6,6 @@ import bookDetailsKC from '../js/bookDetailsKC';
 import { useNavigate } from 'react-router-dom';
 import useBookSelection from '../js/useBookSelection';
 
-
 import viz from '../assets/viz.png';
 import kc from '../assets/kc.png';
 import darkHorse from '../assets/darkHorse.png';
@@ -21,6 +20,7 @@ function HomePage() {
     handleSelectAll,
     handleUnselectAll,
     handleBookCardClick,
+    bookCardStyles, // Get bookCardStyles
   } = useBookSelection();
   
   const navigate = useNavigate();
@@ -36,7 +36,13 @@ function HomePage() {
       const bookKey = `book${i}`;
       const book = bookDetailsKC[bookKey];
       booksKC.push(
-        <div id={bookKey} className="bookcard" key={bookKey} onClick={() => handleBookCardClick(bookKey)}>
+        <div 
+          id={bookKey} 
+          className="bookcard" 
+          key={bookKey} 
+          onClick={() => handleBookCardClick(bookKey)}
+          style={bookCardStyles[bookKey] || {}} // Apply styles conditionally
+        >
           <div className='row'>
             <div className='midsectionleft'>
               <div>
@@ -73,7 +79,13 @@ function HomePage() {
       const bookKey = `book${i}`;
       const book = bookDetailsViz[bookKey];
       booksViz.push(
-        <div id={bookKey} className="bookcard" key={bookKey} onClick={() => handleBookCardClick(bookKey)}>
+        <div 
+          id={bookKey} 
+          className="bookcard" 
+          key={bookKey} 
+          onClick={() => handleBookCardClick(bookKey)}
+          style={bookCardStyles[bookKey] || {}} // Apply styles conditionally
+        >
           <div className='row'>
             <div className='midsectionleft'>
               <div>
@@ -137,15 +149,14 @@ function HomePage() {
       )}
 
       {visibleColumn === 'kc' && (
-              <div className='bookcolumn'>
-                <div className='buttongroup'>
-                  <button className='button' onClick={handleSelectAll}>Select all</button>
-                  <button className='button' onClick={handleUnselectAll}>Unselect all</button>
-                </div>
-                {renderKC()}
-              </div>
-            )}
-            
+        <div className='bookcolumn'>
+          <div className='buttongroup'>
+            <button className='button' onClick={handleSelectAll}>Select all</button>
+            <button className='button' onClick={handleUnselectAll}>Unselect all</button>
+          </div>
+          {renderKC()}
+        </div>
+      )}
     </>
   );
 }
