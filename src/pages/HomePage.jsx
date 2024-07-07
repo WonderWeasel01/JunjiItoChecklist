@@ -3,6 +3,9 @@ import '../css/HomePage.css';
 import '../index.css';
 import bookDetailsViz from '../js/bookDetailsViz';
 import bookDetailsKC from '../js/bookDetailsKC';
+import bookDetailsCM from '../js/bookDetailsCM';
+import bookDetailsDHC from '../js/bookDetailsDHC';
+import bookDetailsOldViz from '../js/bookDetailsOldViz';
 import { useNavigate } from 'react-router-dom';
 import useBookSelection from '../js/useBookSelection';
 
@@ -30,48 +33,7 @@ function HomePage() {
     navigate(`/checklist?books=${encodeURIComponent(selectedBooksJSON)}`);
   };
 
-  const renderKC = () => {
-    const booksKC = [];
-    for (let i = 25; i <= 30; i++) {
-      const bookKey = `book${i}`;
-      const book = bookDetailsKC[bookKey];
-      booksKC.push(
-        <div 
-          id={bookKey} 
-          className="bookcard" 
-          key={bookKey} 
-          onClick={() => handleBookCardClick(bookKey)}
-          style={bookCardStyles[bookKey] || {}} // Apply styles conditionally
-        >
-          <div className='row'>
-            <div className='midsectionleft'>
-              <div>
-                <h2>{book.title}</h2>
-              </div>
-              <div>
-              <img src={book.image} alt={book.title} className="coverimage" />
-              </div>
-            </div>
-            <div className='midsectionright'>
-            <div className='description'>
-                <h3> 
-                Description
-                </h3>
-                {book.description}
-              </div>
-              
-            </div>
-          </div>
-          <div className='bottomrow' style={{ backgroundColor: book.color }}>
-            <div>{book.publicationDate}</div>
-            <div>{book.isbn}</div>
-            <div>{book.format}</div>
-          </div>
-        </div>
-      );
-    }
-    return booksKC;
-  };
+  
 
   const renderViz = () => {
     const booksViz = [];
@@ -116,6 +78,180 @@ function HomePage() {
     return booksViz;
   };
 
+  const renderKC = () => {
+    const booksKC = [];
+    for (let i = 1; i <= 6; i++) {
+      const bookKey = `bookKC${i}`;
+      const book = bookDetailsKC[bookKey];
+      booksKC.push(
+        <div 
+          id={bookKey} 
+          className="bookcard" 
+          key={bookKey} 
+          onClick={() => handleBookCardClick(bookKey)}
+          style={bookCardStyles[bookKey] || {}} 
+        >
+          <div className='row'>
+            <div className='midsectionleft'>
+              <div>
+                <h2>{book.title}</h2>
+              </div>
+              <div>
+              <img src={book.image} alt={book.title} className="coverimage" />
+              </div>
+            </div>
+            <div className='midsectionright'>
+            <div className='description'>
+                <h3> 
+                Description
+                </h3>
+                {book.description}
+              </div>
+              
+            </div>
+          </div>
+          <div className='bottomrow' style={{ backgroundColor: book.color }}>
+            <div>{book.publicationDate}</div>
+            <div>{book.isbn}</div>
+            <div>{book.format}</div>
+          </div>
+        </div>
+      );
+    }
+    return booksKC;
+  };
+
+
+  const renderCM = () => {
+    const booksCM = [];
+    for (let i = 1; i <= 3; i++) {
+      const bookKey = `bookCM${i}`;
+      const book = bookDetailsCM[bookKey];
+      booksCM.push(
+        <div 
+          id={bookKey} 
+          className="bookcard" 
+          key={bookKey} 
+          onClick={() => handleBookCardClick(bookKey)}
+          style={bookCardStyles[bookKey] || {}} 
+        >
+          <div className='row'>
+            <div className='midsectionleft'>
+              <div>
+                <h2>{book.title}</h2>
+              </div>
+              <div>
+              <img src={book.image} alt={book.title} className="coverimage" />
+              </div>
+            </div>
+            <div className='midsectionright'>
+            <div className='description'>
+                <h3> 
+                Description
+                </h3>
+                {book.description}
+              </div>
+              
+            </div>
+          </div>
+          <div className='bottomrow' style={{ backgroundColor: book.color }}>
+            <div>{book.publicationDate}</div>
+            <div>{book.isbn}</div>
+            <div>{book.format}</div>
+          </div>
+        </div>
+      );
+    }
+    return booksCM;
+  };
+
+  const renderDHC = () => {
+    const booksDHC = [];
+    for (let i = 1; i <= 3; i++) {
+      const bookKey = `bookDHC${i}`;
+      const book = bookDetailsDHC[bookKey];
+      booksDHC.push(
+        <div 
+          id={bookKey} 
+          className="bookcard" 
+          key={bookKey} 
+          onClick={() => handleBookCardClick(bookKey)}
+          style={bookCardStyles[bookKey] || {}} 
+        >
+          <div className='row'>
+            <div className='midsectionleft'>
+              <div>
+                <h2>{book.title}</h2>
+              </div>
+              <div>
+              <img src={book.image} alt={book.title} className="coverimage" />
+              </div>
+            </div>
+            <div className='midsectionright'>
+            <div className='description'>
+                <h3> 
+                Description
+                </h3>
+                {book.description}
+              </div>
+              
+            </div>
+          </div>
+          <div className='bottomrow' style={{ backgroundColor: book.color }}>
+            <div>{book.publicationDate}</div>
+            <div>{book.isbn}</div>
+            <div>{book.format}</div>
+          </div>
+        </div>
+      );
+    }
+    return booksDHC;
+  }
+
+  const renderOldViz = () => {
+    const booksOldViz = [];
+    for (let i = 1; i <= 10; i++) {
+      const bookKey = `bookOldViz${i}`;
+      const book = bookDetailsOldViz[bookKey];
+      booksOldViz.push(
+        <div 
+          id={bookKey} 
+          className="bookcard" 
+          key={bookKey} 
+          onClick={() => handleBookCardClick(bookKey)}
+          style={bookCardStyles[bookKey] || {}} 
+        >
+          <div className='row'>
+            <div className='midsectionleft'>
+              <div>
+                <h2>{book.title}</h2>
+              </div>
+              <div>
+              <img src={book.image} alt={book.title} className="coverimage" />
+              </div>
+            </div>
+            <div className='midsectionright'>
+            <div className='description'>
+                <h3> 
+                Description
+                </h3>
+                {book.description}
+              </div>
+              
+            </div>
+          </div>
+          <div className='bottomrow' style={{ backgroundColor: book.color }}>
+            <div>{book.publicationDate}</div>
+            <div>{book.isbn}</div>
+            <div>{book.format}</div>
+          </div>
+        </div>
+      );
+    }
+    return booksOldViz;
+  }
+
+
   return (
     <>
       <div id="sticky-button">
@@ -157,6 +293,39 @@ function HomePage() {
           {renderKC()}
         </div>
       )}
+
+      {visibleColumn === 'comicsOne' && (
+        <div className='bookcolumn'>
+          <div className='buttongroup'>
+            <button className='button' onClick={handleSelectAll}>Select all</button>
+            <button className='button' onClick={handleUnselectAll}>Unselect all</button>
+          </div>
+          {renderCM()}
+        </div>
+      )}
+
+      {visibleColumn === 'darkHorse' && (
+        <div className='bookcolumn'>
+          <div className='buttongroup'>
+            <button className='button' onClick={handleSelectAll}>Select all</button>
+            <button className='button' onClick={handleUnselectAll}>Unselect all</button>
+          </div>
+          {renderDHC()}
+        </div>
+      )}
+
+      {visibleColumn === 'oldViz' && (
+        <div className='bookcolumn'>
+          <div className='buttongroup'>
+            <button className='button' onClick={handleSelectAll}>Select all</button>
+            <button className='button' onClick={handleUnselectAll}>Unselect all</button>
+          </div>
+          {renderOldViz()}
+        </div>
+      )}
+      
+
+
     </>
   );
 }

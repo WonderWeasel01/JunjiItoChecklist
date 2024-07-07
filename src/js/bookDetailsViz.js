@@ -33,13 +33,7 @@ import uncanny from '../assets/bookCoversViz/uncanny.png';
 const bookDetailsViz = {
   book1: {
     title: 'Uzumaki',
-    description: `A curse hangs over the small, foggy Japanese coastal town of
-      Kurozu-cho. According to Kirie Goshima's withdrawn boyfriend Shuichi Saito,
-      the town is haunted not by a person or creature but by the pattern uzumaki.
-      A spiral and hypnotic secret form of the world that manifests in everything.
-      From seashells to maelstroms in the sea and to the human body. As the anxiety
-      spreads, the inhabitants of Kurozu-cho are drawn deeper and deeper into the
-      endless maelstrom…`,
+    description: `A curse hangs over the small, foggy Japanese coastal town of Kurozu-cho. According to Kirie Goshima's withdrawn boyfriend Shuichi Saito, the town is haunted not by a person or creature but by the pattern uzumaki. A spiral and hypnotic secret form of the world that manifests in everything. From seashells to maelstroms in the sea and to the human body. As the anxiety spreads, the inhabitants of Kurozu-cho are drawn deeper and deeper into the endless maelstrom…`,
     format: 'HARDCOVER',
     publicationDate: 'October 15, 2013',
     isbn: 'ISBN-10: 1421561328',
