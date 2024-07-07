@@ -21,7 +21,8 @@ import soichi from '../assets/bookCoversViz/soichi.png';
 import betwixt from '../assets/bookCoversViz/betwixt.png';
 import mimistalesofterror from '../assets/bookCoversViz/mimisTalesOfTerror.png';
 import stitches from '../assets/bookCoversViz/stitches.png';
-
+import alley from '../assets/bookCoversViz/alley.jpeg';
+import theLiminalZoneVolume2 from '../assets/bookCoversViz/theLiminalZoneVolume2.jpg';
 import uncanny from '../assets/bookCoversViz/uncanny.png';
 
 
@@ -236,7 +237,7 @@ const bookDetailsViz = {
     book22: {
       title: "Alley: Junji Ito Story Collection",
       description: "",
-      image: "",
+      image: alley,
       format: "HARDCOVER",
       publicationDate: "July 23, 2024",
       isbn: "ISBN-10: 1974736032",
@@ -256,7 +257,7 @@ const bookDetailsViz = {
     book24: {
       title: "The Liminal Zone, Vol. 2",
       description: "What fate awaits when death is not the end? A group of four university students stumbles upon a deserted, decaying village deep in the mountains only to find an enormous perpetual motion machine still at work there. Before they can answer the questions of who made it and to what end, the friends begin to disappear, one after the other. Another story sees the return of the strange Hikizuri siblings! A girl weighed down since birth by an invisible burden meets the odd siblings and moves in with them in order to understand the truth about herself. But after a string of bizarre occurrences, the siblings’ uncle appears on the scene…",
-      image: "",
+      image: theLiminalZoneVolume2,
       format: "HARDCOVER",
       publicationDate: "Spring 2025",
       isbn: "",
