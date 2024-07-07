@@ -235,7 +235,7 @@ const bookDetailsViz = {
       format: "HARDCOVER",
       publicationDate: "July 23, 2024",
       isbn: "ISBN-10: 1974736032",
-      color: "#CC6270"
+      color: "#0DB799"
     },
     
     book23: {
@@ -245,7 +245,7 @@ const bookDetailsViz = {
       format: "HARDCOVER",
       publicationDate: "October 15, 2024",
       isbn: "ISBN-10: 1974747301",
-      color: "#CC6270"
+      color: "#A0A130"
     },
     
     book24: {
@@ -255,7 +255,7 @@ const bookDetailsViz = {
       format: "HARDCOVER",
       publicationDate: "Spring 2025",
       isbn: "",
-      color: "#CC6270"
+      color: "#72C9EF"
     }
     
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { toJpeg } from 'html-to-image';
+import download from 'downloadjs';
 
 import bookDetailsViz from '../js/bookDetailsViz';
 import bookDetailsKC from '../js/bookDetailsKC';
@@ -48,8 +50,6 @@ function ChecklistPage() {
   const queryParams = new URLSearchParams(location.search);
   const selectedBooks = JSON.parse(queryParams.get('books')) || [];
 
-
-
   // Separate the books based on their source
   const booksViz = Object.keys(bookDetails).filter(bookId => bookDetails[bookId].source === 'viz');
   const booksKC = Object.keys(bookDetails).filter(bookId => bookDetails[bookId].source === 'kc');
@@ -57,8 +57,19 @@ function ChecklistPage() {
   const booksDHC = Object.keys(bookDetails).filter(bookId => bookDetails[bookId].source === 'dhc');
   const booksOldViz = Object.keys(bookDetails).filter(bookId => bookDetails[bookId].source === 'OldViz');
 
+  const handleSaveAsJpg = () => {
+    const node = document.getElementById('book-list');
+    toJpeg(node)
+      .then((dataUrl) => {
+        download(dataUrl, 'checklist.jpg');
+      })
+      .catch((error) => {
+        console.error('Oops, something went wrong!', error);
+      });
+  };
+
   return (
-    <div>
+    <div className='fullbooklist'>
       <h1>Selected Books Checklist:</h1>
       <div id="book-list" className='allbookslist'>
         {/* Render Viz books with Viz logo */}
@@ -206,6 +217,7 @@ function ChecklistPage() {
         })}
 
         {/* Render OldViz books with OldViz logo */}
+      
         <div className="logo-container">
           <img src={oldViz} alt="OldViz Logo" className="logo" />
         </div>
@@ -238,13 +250,13 @@ function ChecklistPage() {
                 </div>
               </div>
             </div>
+            
           );
         })}
-
-
-
       </div>
-      <button onClick={() => window.print()}>Print</button>
+      <div className='buttonrow'>
+      <button onClick={handleSaveAsJpg}>Save as JPG</button>
+      </div>
     </div>
   );
 }

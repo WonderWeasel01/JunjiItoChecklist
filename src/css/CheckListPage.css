@@ -38,12 +38,33 @@
     flex-direction: row;
 }
 
+.fullbooklist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  
+}
+
+.buttonrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 20px;
+    gap: 20px;
+    }
+
 .allbookslist{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
 }
 
 .left{

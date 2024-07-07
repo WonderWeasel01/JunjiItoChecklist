@@ -11,7 +11,7 @@ const bookDetailsCM = {
       publicationDate: 'Publication Date',
       isbn: 'ISBN-10: 1588990842',
       image: tomie1,
-      color: '#D0282F',
+      color: '#DD0E14',
     },
     bookCM2: {
       title: 'Tomie 2',
@@ -20,7 +20,7 @@ const bookDetailsCM = {
       publicationDate: 'Publication Date',
       isbn: 'ISBN-10: 1588990850',
       image: tomie2,
-      color: '#D0282F',
+      color: '#DD0E14',
     },
     bookCM3: {
       title: 'Flesh Colored Horror',
@@ -29,7 +29,7 @@ const bookDetailsCM = {
       publicationDate: 'Publication Date',
       isbn: 'ISBN-10: 1588990869',
       image: fleshColored,
-      color: '#D0282F',
+      color: '#DD0E14',
     },
   };
   export default bookDetailsCM;

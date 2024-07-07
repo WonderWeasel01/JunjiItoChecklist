@@ -11,7 +11,7 @@ const bookDetailsDHC = {
       publicationDate: 'Tomie 1',
       isbn: 'ISBN-10: 1593075421',
       image: MuseumVol1,
-      color: '#D0282F',
+      color: '#E07116',
     },
     bookDHC2: {
       title: 'Museum of Terror, Vol. 2',
@@ -20,7 +20,7 @@ const bookDetailsDHC = {
       publicationDate: 'Tomie 2',
       isbn: 'ISBN-10: 1593076126',
       image: MuseumVol2,
-      color: '#D0282F',
+      color: '#D60C24',
     },
     bookDHC3: {
       title: 'Museum of Terror, Vol. 3',
@@ -29,7 +29,7 @@ const bookDetailsDHC = {
       publicationDate: 'The Long Hair in the Attic',
       isbn: 'ISBN-10: 1593076398',
       image: MuseumVol3,
-      color: '#D0282F',
+      color: '#1C724B',
     },
   };
   export default bookDetailsDHC;

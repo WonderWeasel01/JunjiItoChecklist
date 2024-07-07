@@ -17,7 +17,7 @@ const bookDetailsOldViz = {
       publicationDate: 'October 6, 2001',
       isbn: 'ISBN-10: 1569317143',
       image: uzumaki1,
-      color: '#D0282F',
+      color: '#D3022C',
     },
     bookOldViz2: {
       title: 'Uzumaki: Spiral into Horror, Vol. 2',
@@ -26,7 +26,7 @@ const bookDetailsOldViz = {
       publicationDate: 'July 6, 2002',
       isbn: 'ISBN-10: 1591160332',
       image: uzumaki2,
-      color: '#D0282F',
+      color: '#FECF6D',
     },
     bookOldViz3: {
       title: 'Uzumaki: Spiral into Horror, Vol. 3',
@@ -35,7 +35,7 @@ const bookDetailsOldViz = {
       publicationDate: 'October 6, 2002',
       isbn: 'ISBN-10: 1591160480',
       image: uzumaki3,
-      color: '#D0282F',
+      color: '#EA8D98',
     },
     bookOldViz4: {
       title: 'Uzumaki: Spiral into Horror, Vol. 1 - 2nd Edition',
@@ -44,7 +44,7 @@ const bookDetailsOldViz = {
       publicationDate: 'October 16, 2007',
       isbn: 'ISBN-10: 1421513897',
       image: uzumaki2ndVol1,
-      color: '#D0282F',
+      color: '#DD1210',
     },
     bookOldViz5: {
       title: 'Uzumaki: Spiral into Horror, Vol. 2 - 2nd Edition',
@@ -53,7 +53,7 @@ const bookDetailsOldViz = {
       publicationDate: 'December 18, 2007',
       isbn: 'ISBN-10: 1421513900',
       image: uzumaki2ndVol2,
-      color: '#D0282F',
+      color: '#DD1210',
     },
     bookOldViz6: {
       title: 'Uzumaki: Spiral into Horror, Vol. 3 - 2nd Edition',
@@ -62,7 +62,7 @@ const bookDetailsOldViz = {
       publicationDate: 'February 12, 2008',
       isbn: 'ISBN-10: 1421513919',
       image: uzumaki2ndVol3,
-      color: '#D0282F',
+      color: '#DD1210',
     },
     bookOldViz7: {
       title: 'Gyo, Vol. 1',
@@ -71,7 +71,7 @@ const bookDetailsOldViz = {
       publicationDate: 'September 10, 2003',
       isbn: 'ISBN-10: 8417777806',
       image: gyo1,
-      color: '#D0282F',
+      color: '#2FFFE7',
     },
     bookOldViz8: {
       title: 'Gyo, Vol. 2',
@@ -80,7 +80,7 @@ const bookDetailsOldViz = {
       publicationDate: 'March 10, 2004',
       isbn: 'ISBN-10: 1591161401',
       image: gyo2,
-      color: '#D0282F',
+      color: '#00B7DD',
     },
     bookOldViz9: {
       title: 'Gyo, Vol. 1 - 2nd Edition',
@@ -89,7 +89,7 @@ const bookDetailsOldViz = {
       publicationDate: 'October 16, 2007',
       isbn: 'ISBN-10: 1421513870',
       image: gyo1nd2,
-      color: '#D0282F',
+      color: '#D92323',
     },
     bookOldViz10: {
       title: 'Gyo, Vol. 2 - 2nd Edition',
@@ -98,7 +98,7 @@ const bookDetailsOldViz = {
       publicationDate: 'January 2008',
       isbn: 'ISBN-10: 1421513889',
       image: gyo2nd2,
-      color: '#D0282F',
+      color: '#D92323',
     },
   };
   export default bookDetailsOldViz;
