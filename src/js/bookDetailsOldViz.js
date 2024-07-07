@@ -1,3 +1,14 @@
+import uzumaki1 from '../assets/bookCoverOldViz/uzumaki1.jpg';
+import uzumaki2 from '../assets/bookCoverOldViz/uzumaki2.jpeg';
+import uzumaki3 from '../assets/bookCoverOldViz/uzumaki3.webp';
+import uzumaki2ndVol1 from '../assets/bookCoverOldViz/uzumaki2ndVol1.jpg';
+import uzumaki2ndVol2 from '../assets/bookCoverOldViz/uzumaki2ndVol2.jpeg';
+import uzumaki2ndVol3 from '../assets/bookCoverOldViz/uzumaki2ndVol3.jpg';
+import gyo1 from '../assets/bookCoverOldViz/gyo1.webp';
+import gyo2 from '../assets/bookCoverOldViz/gyo2.webp';
+import gyo1nd2 from '../assets/bookCoverOldViz/gyo1nd2.jpg';
+import gyo2nd2 from '../assets/bookCoverOldViz/gyo2nd2.jpg';
+
 const bookDetailsOldViz = {
     bookOldViz1: {
       title: 'Uzumaki: Spiral into Horror, Vol. 1',
@@ -5,7 +16,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'October 6, 2001',
       isbn: 'ISBN-10: 1569317143',
-      image: '',
+      image: uzumaki1,
       color: '#D0282F',
     },
     bookOldViz2: {
@@ -14,7 +25,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'July 6, 2002',
       isbn: 'ISBN-10: 1591160332',
-      image: '',
+      image: uzumaki2,
       color: '#D0282F',
     },
     bookOldViz3: {
@@ -23,7 +34,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'October 6, 2002',
       isbn: 'ISBN-10: 1591160480',
-      image: '',
+      image: uzumaki3,
       color: '#D0282F',
     },
     bookOldViz4: {
@@ -32,7 +43,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'October 16, 2007',
       isbn: 'ISBN-10: 1421513897',
-      image: '',
+      image: uzumaki2ndVol1,
       color: '#D0282F',
     },
     bookOldViz5: {
@@ -41,7 +52,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'December 18, 2007',
       isbn: 'ISBN-10: 1421513900',
-      image: '',
+      image: uzumaki2ndVol2,
       color: '#D0282F',
     },
     bookOldViz6: {
@@ -50,7 +61,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'February 12, 2008',
       isbn: 'ISBN-10: 1421513919',
-      image: '',
+      image: uzumaki2ndVol3,
       color: '#D0282F',
     },
     bookOldViz7: {
@@ -59,7 +70,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'September 10, 2003',
       isbn: 'ISBN-10: 8417777806',
-      image: '',
+      image: gyo1,
       color: '#D0282F',
     },
     bookOldViz8: {
@@ -68,7 +79,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'March 10, 2004',
       isbn: 'ISBN-10: 1591161401',
-      image: '',
+      image: gyo2,
       color: '#D0282F',
     },
     bookOldViz9: {
@@ -77,7 +88,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'October 16, 2007',
       isbn: 'ISBN-10: 1421513870',
-      image: '',
+      image: gyo1nd2,
       color: '#D0282F',
     },
     bookOldViz10: {
@@ -86,7 +97,7 @@ const bookDetailsOldViz = {
       format: 'HARDCOVER',
       publicationDate: 'January 2008',
       isbn: 'ISBN-10: 1421513889',
-      image: '',
+      image: gyo2nd2,
       color: '#D0282F',
     },
   };
